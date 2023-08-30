@@ -95,7 +95,7 @@ async function main() {
 
 
     const client = new TonClient({
-      endpoint: "https://toncenter.com/api/v2/jsonRPC",
+      endpoint: "https://testnet.toncenter.com/api/v2/",
       apiKey: "be3bc142cd29d2289366c7b1121f955dce19daecd7c53fe0da278ac85d0544e9" // you can get an api key from @tonapibot bot in Telegram
     });
     
