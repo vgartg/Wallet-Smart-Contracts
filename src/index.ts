@@ -11,7 +11,7 @@ import { getHttpEndpoint } from "@orbs-network/ton-access";
 
 
 async function main() {
-  const mnemonicArray = 'huge another such vote kite middle quality delay attract lazy era add army rare melt talent sail opinion gossip curtain visual estate best speed'.split(' ')
+  const mnemonicArray = 'ENTER YOUR SEED-CODE HERE(WORD_1, WORD_2...)'.split(' ')
   const keyPair = await mnemonicToWalletKey(mnemonicArray); // extract private and public keys from mnemonic
   console.log(mnemonicArray) // if we want, we can print our mnemonic
 
@@ -62,7 +62,7 @@ async function main() {
 
 const internalMessage = beginCell().
   storeUint(0x10, 6). // no bounce
-  storeAddress(Address.parse("kQDgm5jA3lE9GrXECinqZA6pnJasEf0X8pqs1-j37lXOXofr")).
+  storeAddress(Address.parse("ENTER YOUR WALLET ADDRESS HERE")).
   storeCoins(toNano("0.03")).
   storeUint(1, 1 + 4 + 4 + 64 + 32 + 1 + 1). // We store 1 that means we have body as a reference
   storeRef(internalMessageBody).
